@@ -28,8 +28,9 @@ a {
 .top-nav {
     background: var(--light-bg);
     display: inline-block;
-    position: fixed;
     width: 100%;
+    position: fixed;
+    z-index: 1000;
 }
 .nav {
     list-style-type: none;
