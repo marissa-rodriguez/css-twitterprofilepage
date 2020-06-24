@@ -1,5 +1,5 @@
 :root {
-    --main-bg: #E6ECF0;
+    --main-bg:#E6ECF0;
     --link-color: #3B94D9;
     --main-link-color: #848487;
     --light-bg: #FFF;
@@ -27,11 +27,18 @@ a {
 }
 .top-nav {
     background: var(--light-bg);
+    display: inline-block;
+    position: fixed;
+    width: 100%;
 }
 .nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+.nav-item {
+    padding: 1.5em;
+    display: inline-block;
 }
 .nav-link {
     color: var(--main-link-color);
@@ -43,6 +50,13 @@ a {
 }
 .profile {
     background: var(--light-bg);
+    height: 80px;
+}
+.profile-image {
+    position: absolute;
+}
+.profile-form {
+    float: right;
 }
 .btn {
     border: 1px solid var(--main-link-color);
