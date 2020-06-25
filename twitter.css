@@ -55,11 +55,11 @@ a {
 }
 .profile-details {
     float: left;
-    width: 25%;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-right: .5em;
     margin-left: .5em;
+    width: calc(.5em-25%);
 }
 .profile-image {
     position: absolute;
@@ -93,24 +93,39 @@ a {
 }
 .timeline {
     float: left;
-    width: 50%;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-right: .5em;
     margin-left: .5em;
+    width: calc(.5em-50%);
 }
 .who-to-follow {
     float: right;
-    width: 25%;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-right: .5em;
     margin-left: .5em;
+    width: calc(.5em-25%);
 }
 .media {
     width: 100%;
     background-color: var(--light-bg);
-    border-bottom: 1px var(--separator-color);
+    border-bottom: 1px solid var(--separator-color);
     padding: .5em;
     overflow: auto;
+}
+.media-image {
+    max-width: 50px;
+    float: left;
+    margin-top: 1.33em;
+}
+.media-body {
+    float: left;
+    width: calc(50px-100%);
+}
+.profile-items {
+    padding: 0px;
+}
+.profile-entry {
+    margin: .5em;
 }
